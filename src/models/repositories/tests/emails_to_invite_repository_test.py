@@ -1,7 +1,7 @@
 import pytest
 import uuid
 from src.models.settings.db_connection_hander import db_connection_handler
-from .emails_to_invite_repository import EmailsToInviteRepository
+from ..emails_to_invite_repository import EmailsToInviteRepository
 
 db_connection_handler.connect()
 

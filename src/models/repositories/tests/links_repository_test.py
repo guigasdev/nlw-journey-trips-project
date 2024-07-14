@@ -1,7 +1,7 @@
 import pytest
 import uuid
 from src.models.settings.db_connection_hander import db_connection_handler
-from .links_repository import LinksRepository
+from ..links_repository import LinksRepository
 
 db_connection_handler.connect()
 
