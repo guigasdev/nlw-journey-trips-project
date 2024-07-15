@@ -9,7 +9,7 @@ db_connection_handler.connect()
 activity_id  = str(uuid.uuid4())
 trip_id  = str(uuid.uuid4())
 
-
+@pytest.mark.skip(reason="Interação com o banco")
 def test_registry_activity():
     conn = db_connection_handler.get_connection()
     activities_repository = ActivitiesRepository(conn)
@@ -24,7 +24,7 @@ def test_registry_activity():
 
     activities_repository.registry_activity(activity_infos)
 
-
+@pytest.mark.skip(reason="Interação com o banco")
 def test_find_emails_from_trip():
     conn = db_connection_handler.get_connection()
     activities_repository = ActivitiesRepository(conn)
